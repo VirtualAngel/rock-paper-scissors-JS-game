@@ -13,6 +13,11 @@ You'll use:
     Math.floor()
     Math.random()
 
+This project will have three phases:
+    Phase One: HTML and JS (Can set up some CSS classes if you want)
+    Phase Two: CSS (Design and Styling)
+    Phase Three: Add a score keeper
+
 1. Create html, css, and js files.
     A. Set up Boiler Plate for HTML
     B. (optional) Link CSS file in HTML file
@@ -242,10 +247,4 @@ You'll use:
             }
     G. Save your changes, refresh your browser page, and test that the values are being displayed after Computer and User Choice on screen.
 
-4. CSS:
-    If you chose to stylize your page, you can begin here.
-    A. Call in your section container and make it responsive.
-    B. With accessibility in mind, being choosing fonts, font styles, and colors for your page.
-    C. You can use a browser add-on like Google's Lighthouse to check that your page meets standard web guidelines.
-
-5. Now see if you can code it yourself from scratch. This tutorial will be here if you get stuck!
+4. Now see if you can code it yourself from scratch. This tutorial will be here if you get stuck!
