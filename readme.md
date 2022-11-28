@@ -18,6 +18,7 @@ This project will have three phases:
     Phase Two: CSS (Design and Styling)
     Phase Three: Add a score keeper
 
+Phase One:
 1. Create html, css, and js files.
     A. Set up Boiler Plate for HTML
     B. (optional) Link CSS file in HTML file
