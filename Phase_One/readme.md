@@ -20,9 +20,9 @@ This project will have three phases:
 
 Phase One:
 1. Create html, css, and js files.
-    A. Set up Boiler Plate for HTML
-    B. (optional) Link CSS file in HTML file
-    C. Link JS file in HTML file (before the /body tag)
+    A. Create an HTML file (usually index.html) and set up Boiler Plate for HTML
+    B. Create a CSS file (usually called styles.css) and link CSS file in HTML file (We won't be using this yet, but it's a good idea to have it linked up)
+    C. Create a JavaScript file (usually called scripts.js or app.js) and link the JS file in HTML file (before the /body tag)
 
 2. HTML:
     A. Create 3 h2s for a computer player, a user player, and the results. For example:
@@ -38,7 +38,7 @@ Phase One:
         i. Add id tags for each button
         ii. You can add a class to style the buttons in CSS
     E. If you chose not to style your page, it should look something like this: 
-        ![Alt text](../../../../C:/JS%20Learning/7%20JS%20Games/Rock-Paper-Scissors(Tutorial)/images/HTML_Screenshot1.png)
+        Phase_One\images\HTML_Screenshot1.png
        
 3. JS:
     Create some logic so that whatever choice is picked (button clicked), it'll display next to the top portion of the HTML (Computer Choice, User Choice, and Result).
