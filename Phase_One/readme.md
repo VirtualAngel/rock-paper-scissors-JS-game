@@ -1,7 +1,9 @@
+Rock, Paper, Scissors Game
+Phase One
+
 From Ania Kubów's YouTube: Learn JavaScript by Building 7 Games - Full Course
     https://www.youtube.com/watch?v=ec8vSKJuZTk&list=PLI6QOseMfHpd5CCOOb4nm3gsNg1omWlA5&index=3&t=8341s
     Learn JavaScript Methods and Properties
-    Rock, Paper, Scissors Game
 
 You'll use:
     .getElementById()
