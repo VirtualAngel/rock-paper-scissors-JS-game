@@ -8,11 +8,11 @@ Score Keeper portion from freecodecamp's YouTube: Learn JavaScript by Building 7
 
 You'll use:
     HTML
-    CSS
+    CSS (optional at this point)
     JavaScript:
         .getElementById()
         .querySelector
-
+        .innerHTML
 
 This project will have three phases:
     Phase One: HTML and JS (Can set up some CSS classes if you want)
@@ -80,10 +80,27 @@ JS:
             win();
             result='You win!'
         }
-    iii. Test the code in the console to make sure wins are being logged:
+    iii. Repeat these steps for lose (we don't need anything for draw). Keep these functions empty as they'll have different logic applied to them.
+    iv. Test the code in the console to make sure wins are being logged:
 
             function win() {
                 console.log("Win");
             }
-    iv. Repeat these steps for lose and draw. Keep these functions empty as they'll have different logic applied to them.
-9. 
+9. Within our win function, we want to increase  the user's score:
+
+        userScore++;
+    i. Delete previous tests (console.logs) and console.log user score to see if it works
+    ii. Be sure to test all options!
+10. Delete all of your tests and under the win function, we'll want to log these to the page in our span tag. To do so, write some logic in the win function using our variables for user and computer scores. If we also use .innerHTML, it'll display it on the page.
+
+        userScore_span.innerHTML = userScore;
+        computerScore_span.innerHTML = computerScore;
+
+    i. Save, and test it on the page.
+    ii. Only wins will be logged since we haven't set up the logic for losses and draws.
+11. Now to set up the lose function. Copy and paste what we had for the logic in the win function. It's the same, but we want the computer score to add by one instead:
+
+        computerScore++;
+    i. Save
+    ii. Test your code. Both the user and computer scores should change.
+12. Onto Phase three, Styling!

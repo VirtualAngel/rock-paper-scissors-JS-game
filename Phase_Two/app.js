@@ -4,16 +4,16 @@ const userChoiceDisplay_span = document.getElementById('user-choice');
 const resultDisplay_span = document.getElementById('result');
 const possibleChoices = document.querySelectorAll('button');
 
-let userChoice;
-let computerChoice;
-let result;
+let userChoice = ['Rock', 'Paper', 'Scissors'];
+let computerChoice = ['Rock', 'Paper', 'Scissors'];
+let result_span = document.querySelector("result");
 
 
 // Scoreboard
 let userScore = 0;
 let computerScore = 0;
 const userScore_span = document.getElementById('user-score');
-const userComputer_span = document.getElementById('computer-score');
+const computerScore_span = document.getElementById('computer-score');
 const scoreBoard_section = document.querySelector('.scoreboard');
 
 
@@ -22,23 +22,26 @@ possibleChoices.forEach(buttonChoice => buttonChoice.addEventListener('click', (
     userChoiceDisplay_span.innerHTML = userChoice
     generateComputerChoice()
     getResult()
-}));
+}))
 
 function win() {
-    console.log("WIN");
+    userScore++;
+    userScore_span.innerHTML = userScore;
+    computerScore_span.innerHTML = computerScore;
 }
 
 function lose() {
-    console.log("LOSE");
+    computerScore++;
+    userScore_span.innerHTML = userScore;
+    computerScore_span.innerHTML = computerScore;
 }
 
 function draw() {
-    console.log("DRAW");
+    
 }
 
 function generateComputerChoice() {
     const randomNumber = Math.floor(Math.random() * possibleChoices.length) + 1
-    console.log(randomNumber)
 
     if (randomNumber === 1) {
         computerChoice = 'Rock'
@@ -51,11 +54,10 @@ function generateComputerChoice() {
     }
 
     computerChoiceDisplay_span.innerHTML = computerChoice
-};
+}
 
 function getResult() {
     if (computerChoice === userChoice) {
-        draw();
         result='You\'ve tied with the computer!'
     }
     if (computerChoice === 'Rock' && userChoice === 'Paper') {
@@ -83,6 +85,6 @@ function getResult() {
         result='You lose!'
     }
     resultDisplay_span.innerHTML = result
-};
+}
 
 
