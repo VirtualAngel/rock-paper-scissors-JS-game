@@ -57,11 +57,11 @@ Phase One:
     Create some logic so that whatever choice is picked (button clicked), it'll display next to the top portion of the HTML (Computer Choice, User Choice, and Result).
     
     First, the User choice:
-    A. Start picking out all of the elements in the HTML file by the id that was created and declare a constant keyword (or value):
+    A. Start picking out all of the elements in the HTML file by the id that was created and declare a constant keyword (or value). You can add the HTML element (span, div, button, etc.) as an underscore to the variable name for easier readability:
 
-        const computerChoiceDisplay = document.getElementById('computer-choice')
-        const userChoiceDisplay = document.getElementById('user-choice')
-        const resultDisplay = document.getElementById('result')
+        const computerChoiceDisplay_span = document.getElementById('computer-choice')
+        const userChoiceDisplay_span = document.getElementById('user-choice')
+        const resultDisplay_span = document.getElementById('result')
 
     B. Use querySelectorAll to grab all of the button elements. Declare a constant keyword (or value)
         (Note: Don't use this if you plan on adding more buttons.)
@@ -72,12 +72,15 @@ Phase One:
         i. Call in the querySelectorAll keyword you instantiated above (the const value) and use .forEach
 
                 possibleChoices.forEach()
+
        ii. Set a keyword/value for possible choice (or possible Button if choices/choice becomes confusing)
             
                 possibleChoices.forEach(buttonChoice)
+
        iii. add an event listener for click (so something happens whenever you press a button) and pass in an event - (e) - listener
             
                 possibleChoices.forEach(buttonChoice => buttonChoice.addEventListener('click', (e)
+
        iv. add in a function 
             a. You'll want to target the id: 
                 e.target.id
@@ -89,9 +92,9 @@ Phase One:
                 userChoiceDisplay.innerHTML = userChoice
         v. The code should look something like this:
 
-                const computerChoiceDisplay = document.getElementById('computer-choice')
-                const userChoiceDisplay = document.getElementById('user-choice')
-                const resultDisplay = document.getElementById('result')
+                const computerChoiceDisplay_span = document.getElementById('computer-choice')
+                const userChoiceDisplay_span = document.getElementById('user-choice')
+                const resultDisplay_span = document.getElementById('result')
                 const possibleChoices = document.querySelectorAll('button')
                 let userChoice
 
