@@ -54,25 +54,36 @@ HTML
 JS:
 5. Below the other variables in your JavaScript file, create two more for User Score and Computer Score. Set them equal to zero (because this is the values where the scoreboard will start). Make sure you use let instead of const as these numbers will change!
     ie) 
+
         let userScore = 0
         let computerScore = 0
 
 6. Pull in the ID's you created for the Player Score and Computer score (in the spans) by setting new variables and using document.getElementByID. This will show it to the DOM (page).
     ie) 
+
         const userScore_span = document.getElementById("user-score");
         const userComputer_span = document.getElementById("computer-score");
 
 7. Set a new variable for your scoreboard class. Use the document.querySelector for this.
     ie) 
+
         const scoreBoard_section = document.querySelector('.scoreboard');
 8. Create a function called "win" below the possible choices function.
     i. Make the score increment by one if the user wins:
+
         function win() {
             userScore++;
         } 
-    ii. Within the win/loss if statements from Phase One, bring in the new "win" function wins.
-        ie)    
+    ii. Within the win/loss if statements from Phase One, bring in the new "win" function wins:
+     
         if (computerChoice === 'Rock' && userChoice === 'Paper') {
             win();
             result='You win!'
         }
+    iii. Test the code in the console to make sure wins are being logged:
+
+            function win() {
+                console.log("Win");
+            }
+    iv. Repeat these steps for lose and draw. Keep these functions empty as they'll have different logic applied to them.
+9. 

@@ -8,6 +8,7 @@ let userChoice;
 let computerChoice;
 let result;
 
+
 // Scoreboard
 let userScore = 0;
 let computerScore = 0;
@@ -16,31 +17,36 @@ const userComputer_span = document.getElementById('computer-score');
 const scoreBoard_section = document.querySelector('.scoreboard');
 
 
-
 possibleChoices.forEach(buttonChoice => buttonChoice.addEventListener('click', (e) => {
     userChoice = e.target.id
     userChoiceDisplay_span.innerHTML = userChoice
     generateComputerChoice()
     getResult()
-}))
+}));
 
 function win() {
-    userScore++;
-    console.log("Win");
-    console.log(userScore);
+    console.log("WIN");
+}
+
+function lose() {
+    console.log("LOSE");
+}
+
+function draw() {
+    console.log("DRAW");
 }
 
 function generateComputerChoice() {
-    const randomNumber = Math.floor(Math.random() * 3);
+    const randomNumber = Math.floor(Math.random() * possibleChoices.length) + 1
     console.log(randomNumber)
 
-    if (randomNumber === 0) {
+    if (randomNumber === 1) {
         computerChoice = 'Rock'
     }
-    if (randomNumber === 1) {
+    if (randomNumber === 2) {
         computerChoice = 'Paper'
     }
-    if (randomNumber === 2) {
+    if (randomNumber === 3) {
         computerChoice = 'Scissors'
     }
 
@@ -49,6 +55,7 @@ function generateComputerChoice() {
 
 function getResult() {
     if (computerChoice === userChoice) {
+        draw();
         result='You\'ve tied with the computer!'
     }
     if (computerChoice === 'Rock' && userChoice === 'Paper') {
@@ -56,9 +63,11 @@ function getResult() {
         result='You win!'
     }
     if (computerChoice === 'Rock' && userChoice === 'Scissors') {
+        lose();
         result='You Lose!'
     }
     if (computerChoice === 'Paper' && userChoice === 'Rock') {
+        lose();
         result='You lose!'
     }
     if (computerChoice === 'Paper' && userChoice === 'Scissors') {
@@ -70,7 +79,10 @@ function getResult() {
         result='You win!'
     }
     if (computerChoice === 'Scissors' && userChoice === 'Paper') {
+        lose();
         result='You lose!'
     }
     resultDisplay_span.innerHTML = result
 };
+
+
