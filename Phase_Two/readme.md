@@ -25,8 +25,8 @@ This project will have three phases:
 HTML
 1. Refer to your design. In that section, create an HTML div with a class for the scoreboard. ie) div class="scoreboard"
 2. Within the new div, create two new divs. One will be for the User Score, the other for the Computer Score. 
-    i. Give them classes for later CSS styling
-    ii. It should look something like this:
+    A. Give them classes for later CSS styling
+    B. It should look something like this:
             <h2 class="scoreboard-title">Score</h2>
             <div class="player-label">Player:
             </div>
@@ -69,19 +69,19 @@ JS:
 
         const scoreBoard_section = document.querySelector('.scoreboard');
 8. Create a function called "win" below the possible choices function.
-    i. Make the score increment by one if the user wins:
+    A. Make the score increment by one if the user wins:
 
         function win() {
             userScore++;
         } 
-    ii. Within the win/loss if statements from Phase One, bring in the new "win" function wins:
+    B. Within the win/loss if statements from Phase One, bring in the new "win" function wins:
      
         if (computerChoice === 'Rock' && userChoice === 'Paper') {
             win();
             result='You win!'
         }
-    iii. Repeat these steps for lose (we don't need anything for draw). Keep these functions empty as they'll have different logic applied to them.
-    iv. Test the code in the console to make sure wins are being logged:
+    C. Repeat these steps for lose (we don't need anything for draw). Keep these functions empty as they'll have different logic applied to them.
+    D. Test the code in the console to make sure wins are being logged:
 
             function win() {
                 console.log("Win");
@@ -89,18 +89,18 @@ JS:
 9. Within our win function, we want to increase  the user's score:
 
         userScore++;
-    i. Delete previous tests (console.logs) and console.log user score to see if it works
-    ii. Be sure to test all options!
+    A. Delete previous tests (console.logs) and console.log user score to see if it works
+    B. Be sure to test all options!
 10. Delete all of your tests and under the win function, we'll want to log these to the page in our span tag. To do so, write some logic in the win function using our variables for user and computer scores. If we also use .innerHTML, it'll display it on the page.
 
         userScore_span.innerHTML = userScore;
         computerScore_span.innerHTML = computerScore;
 
-    i. Save, and test it on the page.
-    ii. Only wins will be logged since we haven't set up the logic for losses and draws.
+    B. Save, and test it on the page.
+    C. Only wins will be logged since we haven't set up the logic for losses and draws.
 11. Now to set up the lose function. Copy and paste what we had for the logic in the win function. It's the same, but we want the computer score to add by one instead:
 
         computerScore++;
-    i. Save
-    ii. Test your code. Both the user and computer scores should change.
+    A. Save
+    B. Test your code. Both the user and computer scores should change.
 12. Onto Phase three, Styling!

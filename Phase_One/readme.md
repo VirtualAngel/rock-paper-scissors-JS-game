@@ -23,7 +23,8 @@ This project will have three phases:
     Phase Three: CSS (Design and Styling)
 
 ***///*** Before you begin coding, it's a good idea to plan out your project.  ***///***
-	A. Draw out your design on a piece of paper. Where are you going to place buttons? Where is your text going to go? Where are the containers going to be placed? Think of all the elements you'll need as you work on your design.
+	
+    A. Draw out your design on a piece of paper. Where are you going to place buttons? Where is your text going to go? Where are the containers going to be placed? Think of all the elements you'll need as you work on your design.
 	B. (Optional) You can use a free design tool called Figma - just create an account: https://www.figma.com/
         i. Watch this tutorial on how to use Figma: https://www.youtube.com/watch?v=DIfNp1wScwk
         ii. Begin designing with accessibility in mind.
@@ -139,7 +140,7 @@ Phase One:
             }
     I. Next, call in computerChoiceDisplay and use an innerHTML to set it to userChoice:
                 computerChoiceDisplay.innerHTML = computerChoice
-        At this point the full code should look something like this (if you're not using a ternary operator):
+        At this point the full code should look something like this:
 
             const computerChoiceDisplay = document.getElementById('computer-choice')
             const userChoiceDisplay = document.getElementById('user-choice')

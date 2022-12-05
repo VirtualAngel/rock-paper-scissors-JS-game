@@ -13,11 +13,10 @@ possibleChoices.forEach(buttonChoice => buttonChoice.addEventListener('click', (
     userChoiceDisplay_span.innerHTML = userChoice
     generateComputerChoice()
     getResult()
-}));
+}))
 
 function generateComputerChoice() {
     const randomNumber = Math.floor(Math.random() * possibleChoices.length) + 1
-    console.log(randomNumber)
 
     if (randomNumber === 1) {
         computerChoice = 'Rock'
@@ -30,7 +29,7 @@ function generateComputerChoice() {
     }
 
     computerChoiceDisplay_span.innerHTML = computerChoice
-};
+}
 
 function getResult() {
     if (computerChoice === userChoice) {
@@ -55,4 +54,4 @@ function getResult() {
         result='You lose!'
     }
     resultDisplay_span.innerHTML = result
-};
+}
