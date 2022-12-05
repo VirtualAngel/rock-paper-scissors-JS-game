@@ -12,7 +12,8 @@ HTML
 CSS (Flexbox, Grid, or both)
 Figma (Optional)
 
-1. Design your page. Make sure your fonts are readable, and their color contrasts highly with the background. You can find many color contrast sites online.
+1. Work off your design from Phase One. If you skipped this step, now is a good time to revisit it:
+     Make sure your fonts are readable, and their color contrasts highly with the background. You can find many color contrast sites online.
 		WebAIM: https://webaim.org/resources/contrastchecker/
 		Coolors: https://coolors.co/contrast-checker/112a46-acc8e5
 		Adobe Color: https://color.adobe.com/create/color-contrast-analyzer
@@ -23,7 +24,7 @@ Figma (Optional)
         iii. You can add icons for rock, paper, scissors hands: https://www.figma.com/community/plugin/1144676442624326325/Font-Awesome-Icons-by-Iconduck
             or: https://www.figma.com/community/file/994237671938398148
             Example: https://www.figma.com/file/1vpUV1te0SHEuEMGCQXOCe/Rock%2C-Paper%2C-Scissors?node-id=1%3A2&t=WCKl4yLo2kjiYrPK-1
-            Note: We'll add the Scorekeeper in Phase Three
+            
 2. Time to do some styling! Pro tip: work off of your design. It's ok to change things as you go if you find something that works better.
     A. In HTML create your containers, but use semantic HTML (Section, Article, Button, etc.) instead of divs where you can:
         i. Header

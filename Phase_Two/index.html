@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors</title>
+    <!-- link the css file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="rock-title">
+                Rock
+            </div>
+            <div class="paper-title">
+                Paper
+            </div>
+            <div class="scissors-title">
+                Scissors
+            </div>
+        </div>
+    </header>
+    <main>
+    <section class="main-container">
+    <!-- The span ids are for JS -->
+        <h2>Computer Choice: <span id ="computer-choice"></span></h2>
+        <h2>User Choice: <span id ="user-choice"></span></h2>
+        <h2>Result: <span id ="result"></span></h2>
+    
+        
+        <section class="scoreboard">
+            <h2 class="scoreboard-title">Score:</h2>
+            <div class="player-label">Player:
+                <div class="player-score-box"><span id="user-score">0</span></div>
+            </div>
+            <div class="computer-label">Computer:
+                <div class="computer-score-box"><span id="computer-score">0</span></div>
+            </div>            
+        </section>
+
+        <section class="player-choices">
+    <!-- The button ids are for JS -- Player Choices -->
+            <button id="Rock">Rock</button>
+            <button id="Paper">Paper</button>
+            <button id="Scissors">Scissors</button>
+        </section>
+    </section>
+    </main>
+    <!-- link the javascript file -->
+    <script src="app.js"></script>
+</body>
+</html>

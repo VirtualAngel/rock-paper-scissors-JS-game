@@ -6,19 +6,21 @@ From Ania Kubów's YouTube: Learn JavaScript by Building 7 Games - Full Course
     Learn JavaScript Methods and Properties
 
 You'll use:
-    .getElementById()
-    .querySelectorAll()
-    .forEach()
-    .addEventListener()
-    .innerHTML
-    e.target.id
-    Math.floor()
-    Math.random()
+    HTML
+    JavaScript:
+        .getElementById()
+        .querySelectorAll()
+        .forEach()
+        .addEventListener()
+        .innerHTML
+        e.target.id
+        Math.floor()
+        Math.random()
 
 This project will have three phases:
     Phase One: HTML and JS (Can set up some CSS classes if you want)
-    Phase Two: CSS (Design and Styling)
-    Phase Three: Add a score keeper
+    Phase Two: Add a score keeper
+    Phase Three: CSS (Design and Styling)
 
 Phase One:
 1. Create html, css, and js files.
