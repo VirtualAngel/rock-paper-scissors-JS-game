@@ -10,7 +10,8 @@ You'll use:
     HTML
     CSS
     JavaScript:
-
+        .getElementById()
+        .querySelector
 
 
 This project will have three phases:
@@ -34,14 +35,33 @@ HTML
     
     
 3. After each of the divs for player score and computer score, place a span element (total of two) and set them to 0. Then, give them an ID that will later be used for the scores in JavaScript:
-
-            <span id="user-score">0</span>
-            <span id="computer-score">0</span>
+        <section class="scoreboard">
+            <h2 class="scoreboard-title">Score:</h2>
+            <div class="player-label">Player:
+                <div class="player-score-box">
+                    <span id="user-score">0</span>
+                </div>
+            </div>
+            <div class="computer-label">Computer:
+                <div class="computer-score-box">
+                    <span id="computer-score">0</span>
+                </div>
+            </div>            
+        </section>
 
 4. Test that everything still works before we move onto the JavaScript portion.
 
-5. In your JavaScript file, create two constant variables and set them equal to zero (because this is the values where the scoreboard will start).
-    ie) const userScore = 0
+JS:
+5. Below the other const variables in your JavaScript file, create two more for User Score and Computer Score. Set them equal to zero (because this is the values where the scoreboard will start).
+    ie) 
+        const userScore = 0
         const computerScore = 0
 
-            
+6. Pull in the ID's you created for the Player Score and Computer score (in the spans) by setting new variables and using document.getElementByID. This will show it to the DOM (page).
+    ie) 
+        const userScore_span = document.getElementById("user-score");
+        const userComputer_span = document.getElementById("computer-score");
+
+7. Set a new variable for your scoreboard class. Use the document.querySelector for this.
+    ie) 
+        

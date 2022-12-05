@@ -22,6 +22,15 @@ This project will have three phases:
     Phase Two: Add a score keeper
     Phase Three: CSS (Design and Styling)
 
+***///*** Before you begin coding, it's a good idea to plan out your project.  ***///***
+	A. Draw out your design on a piece of paper. Where are you going to place buttons? Where is your text going to go? Where are the containers going to be placed? Think of all the elements you'll need as you work on your design.
+	B. (Optional) You can use a free design tool called Figma - just create an account: https://www.figma.com/
+        i. Watch this tutorial on how to use Figma: https://www.youtube.com/watch?v=DIfNp1wScwk
+        ii. Begin designing with accessibility in mind.
+        iii. You can add icons for rock, paper, scissors hands: https://www.figma.com/community/plugin/1144676442624326325/Font-Awesome-Icons-by-Iconduck
+            or: https://www.figma.com/community/file/994237671938398148
+            Example: https://www.figma.com/file/1vpUV1te0SHEuEMGCQXOCe/Rock%2C-Paper%2C-Scissors?node-id=1%3A2&t=WCKl4yLo2kjiYrPK-1
+
 Phase One:
 1. Create html, css, and js files.
     A. Create an HTML file (usually index.html) and set up Boiler Plate for HTML
