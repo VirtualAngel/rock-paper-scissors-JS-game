@@ -12,6 +12,8 @@ HTML
 CSS (Flexbox, Grid, or both)
 Figma (Optional)
 
+If you get stuck, Kevin Powell has some excellent videos on HTML and CSS on his YouTube channel: https://www.youtube.com/@KevinPowell
+
 1. Work off your design from Phase One. If you skipped this step, now is a good time to revisit it:
      Make sure your fonts are readable, and their color contrasts highly with the background. You can find many color contrast sites online.
 		WebAIM: https://webaim.org/resources/contrastchecker/
