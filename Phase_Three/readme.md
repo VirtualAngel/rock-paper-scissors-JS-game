@@ -36,4 +36,12 @@ If you get stuck, Kevin Powell has some excellent videos on HTML and CSS on his 
     B. Think ahead, what CSS classes are you going to need to style these elements and make them responsive?
         i. Are you going to use Flexbox, Grid, or a combination of both?
         ii. Time to brush up on what you learned for media queries!
-    C. As you work at styling your page, test the changes you make often.
+    C. Set up your global CSS styles first - colors, font types, margins, etc.
+        i. This is a good time to practice using the :root selector. It'll make you life so much easier!
+            https://developer.mozilla.org/en-US/docs/Web/CSS/:root
+        ii. Code for mobile-size first.
+    D. Target the classes or IDs from your HTML.
+        i. Style these so they look like your mockup.
+        ii. Test often to make sure new styles work with previous ones.
+3. If you run into problems, Google and YouTube are great free resources.
+4. Happy coding!
